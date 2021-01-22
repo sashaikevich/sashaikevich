@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/for-realtors.css">
+  <title>Improved Pics</title>
+</head>
+<body>
+  <section>
+  <h1>Better Images = Greater Interest = More Visitors = Quicker Sales</h1>
+  <div class="demo_img" id="interior">
+    <div class="pic1">
+    </div>
+    <div class="pic2">
+    </div>
+  </div>
+  <p>Slide mouse over the image to see the before and after</p>
+  <ul>
+    <li>room brightened up</li>
+    <li>camera tilt corrected</li>
+    <li>dents on bedsheets removed</li>
+  </ul>
+  <ul>
+    <li>distracting ceiling fan removed</li>
+    <li>part of the wall drawn in</li>
+    <li>nightstand light turned on</li>
+  </ul>
+
+  <div class="demo_img" id="exterior">
+    <div class="pic1">
+    </div>
+    <div class="pic2">
+    </div>
+  </div>
+  <p>Slide mouse over the image to see the before and after</p>
+  <ul>
+    <li>colors made more vibrant</li>
+    <li>sky made more interesting</li>
+    <li>a few eyesores removed</li>
+  </ul>
+</section>
+
+
+  <script type="text/javascript">
+  var exterior = document.getElementById('exterior');
+  var extAfter = document.querySelector("#exterior .pic2");
+  exterior.onmousemove = function(event){
+    var mouseX = event.offsetX;
+    // console.log(mouseX);
+    extAfter.style.width = mouseX + "px";
+  };
+
+  var interior = document.getElementById('interior');
+  var intAfter = document.querySelector("#interior .pic2");
+  interior.onmousemove = function(event){
+    var mouseX = event.offsetX;
+    // console.log(mouseX);
+    intAfter.style.width = mouseX + "px";
+  };
+  </script>
+</body>
+</html>

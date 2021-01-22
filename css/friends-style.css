@@ -1,0 +1,268 @@
+.recommendations_page {
+  margin: 2em 0;
+  padding: 0 20px;
+}
+
+.recommendations_page h1 {
+  font-size: 3em;
+  /* text-transform: uppercase; */
+}
+.recommendations_page .byline {
+  font-size: 1.15em;
+  line-height: 1.35;
+  font-style: italic;
+  opacity: 0.7;
+  margin: 20px 0;
+}
+
+.my_recommendations h3 {
+  margin: 3em 0px 0em;
+  color: #fff;
+  padding: .7em 20px;
+  /* border-radius: 3px; */
+}
+
+.my_recommendations {
+  margin: 0 auto 5em;
+}
+
+.items-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.items-wrap:after {
+  content:"";
+  flex: auto;
+}
+
+
+.my_recommendations div.item {
+  /* width: calc(100% * (1/5) - 15px); */
+  /* margin-bottom: 15px; */
+  /* border-radius: 3px; */
+  width: 20%;
+  position: relative;
+  vertical-align: top;
+  text-transform: capitalize;
+  font-size: .9em;
+  overflow: hidden;
+  max-height: 10%;
+  line-height: 1.2;
+}
+
+.cover_img {
+  position:relative;
+  left:0;
+  height: 0;
+  transition: all 300ms; /*does this even work? */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.movies .cover_img {
+  padding: 140% 0 0 0;
+}
+.books .cover_img {
+  padding: 160% 0 0 0;
+}
+
+#billions .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BNDQ3OTMyMzM5NF5BMl5BanBnXkFtZTgwOTA2NzU2NDM@._V1_SY1000_CR0,0,666,1000_AL_.jpg');
+}
+
+#halt_fire .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMTczNjAyMDg1Nl5BMl5BanBnXkFtZTgwMDQyNTA2OTE@._V1_.jpg');
+}
+
+#terriers .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BNzg0NDQ0MTcwM15BMl5BanBnXkFtZTcwNTQwNDk3Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg');
+}
+
+#patriot .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BNDgwNjI5MzY3Ml5BMl5BanBnXkFtZTgwNDE5NTAzMTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg');
+}
+
+#arrested_d .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMTk4OTIyNzA5NF5BMl5BanBnXkFtZTcwODQxMTE1OQ@@._V1_SY1000_CR0,0,685,1000_AL_.jpg');
+}
+
+#fargo .cover_img {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5NTYxNjkyNl5BMl5BanBnXkFtZTgwNzY1Mjg4MTI@._V1_UY268_CR1,0,182,268_AL_.jpg');
+}
+
+#taboo .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMTYyNTQwNzk0OV5BMl5BanBnXkFtZTgwMDAyMDI2MDI@._V1_SY1000_SX666_AL_.jpg');
+}
+
+#blinders .cover_img {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxODYzNTQzOV5BMl5BanBnXkFtZTgwMTI2MDYwMDE@._V1_UY268_CR1,0,182,268_AL_.jpg');
+}
+
+#boss .cover_img {
+  background-image: url('https://media.senscritique.com/media/000010721074/source_big/BOSS.jpg');
+}
+
+#off_ted .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMTI3NDgzMTU2Nl5BMl5BanBnXkFtZTcwOTUzMzA1Mg@@._V1_.jpg');
+}
+
+#utopia .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMjMwMTA5NDc5M15BMl5BanBnXkFtZTgwMjQ4MTY0MjE@._V1_.jpg');
+}
+
+#wire .cover_img {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/M/MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ@@._V1_UY268_CR7,0,182,268_AL_.jpg');
+}
+
+#ozark .cover_img {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/M/MV5BODIyNzk5NDg5M15BMl5BanBnXkFtZTgwMTE5NjA5MjI@._V1_UX182_CR0,0,182,268_AL_.jpg');
+}
+
+#night_manager .cover_img {
+  background-image: url('https://i.pinimg.com/236x/ed/22/ba/ed22ba90657c733a688a5ed3d1c7faae--series-news-tv-series.jpg');
+}
+
+#silicone .cover_img {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/M/MV5BOTA4MTE3MTQwMF5BMl5BanBnXkFtZTgwNzk4MTg4MTI@._V1_UX182_CR0,0,182,268_AL_.jpg');
+}
+
+#justified .cover_img {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/518Lxeu2-ZL._SY355_.jpg');
+}
+
+#top_boy .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMjI0MjUzNzc0M15BMl5BanBnXkFtZTgwMjk3NDAzNzE@._V1_SY1000_SX716_AL_.jpg');
+}
+#line_of_duty .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BOTgxNTRiNWYtZjMyNS00OTNiLWFjNzMtNWQ3ZDFhYTEyNDEwXkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SY1000_CR0,0,706,1000_AL_.jpg');
+}
+#succession .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BOWI4NmE4ODMtZjJhYi00MjQ1LWI1YTEtZjkwMjViODViNDVhXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SY1000_CR0,0,666,1000_AL_.jpg');
+}
+#reno_911 .cover_img {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMjMzNzc2NTEzNl5BMl5BanBnXkFtZTcwNDE5ODIzMQ@@._V1_.jpg');
+}
+
+#initiate_bro .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1389226003l/364472.jpg');
+}
+
+#al_rasan .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1348007861l/104101.jpg');
+}
+
+#sarantine .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1328000207l/104097.jpg');
+}
+
+#enders .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1424904668l/9532.jpg');
+}
+
+#reaper .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1316092271l/3173125.jpg');
+}
+
+#hitchhikers .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1404613595l/13.jpg');
+}
+
+#capitol_game .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1344268055l/6785540.jpg');
+}
+
+#second_sons .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1388350472l/384352.jpg');
+}
+
+#first_law .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1284167912l/944073.jpg');
+}
+
+#kingkiller .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1472068073l/186074.jpg');
+}
+#stormlight .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1388184640l/7235533.jpg');
+}
+
+#lightbringer .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1327921884l/7165300.jpg');
+}
+
+#stone_man .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1391645601l/20739796.jpg');
+}
+
+#dragon_tattoo .cover_img {
+  background-image: url('https://images.gr-assets.com/books/1420422566l/24297821.jpg');
+}
+
+.my_recommendations .info {
+  position: absolute;
+  top: 0px;
+  bottom:0px;
+  right:0;
+  transition: 300ms;
+  left: -100%;
+  width: 100%;
+  padding: 15px 10px;
+  display: block;
+}
+
+.my_recommendations.movies h3 {
+  background-color: #960000;
+}
+
+.my_recommendations.movies .info {
+  color: #fff;
+  background: #960000;
+}
+
+.my_recommendations.books h3 {
+  background-color: #001560;
+}
+.my_recommendations.books .info {
+  color: #fff;
+  background: #001560;
+}
+
+.my_recommendations .item:hover .cover_img {
+  left:20%;
+  /* opacity: 0; */
+}
+
+.my_recommendations .item:hover .info {
+  left: 0px;
+}
+
+.my_recommendations .author {
+  display: block;
+}
+
+.my_recommendations .author:before {
+  content: "by ";
+  font-style: italic;
+  text-transform: lowercase;
+  opacity: 0.5;
+}
+
+
+@media screen and (max-width: 1000px){
+  .my_recommendations div.item {
+    /* width: calc(100% * (1/4) - 15px); */
+    width: 25%;
+}
+@media screen and (max-width: 600px){
+  .my_recommendations div.item {
+    /* width: calc(100% * (1/3) - 15px); */
+    width: 33.3333%;
+}
+@media screen and (max-width: 450px){
+  .my_recommendations div.item {
+    /* width: calc(100% * (1/2) - 15px); */
+    width: 50%;
+}

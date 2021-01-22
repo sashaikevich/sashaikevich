@@ -1,0 +1,83 @@
+section {
+  padding-bottom: 100px;
+  width: 772px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px auto 30px;
+  font-size:2em;
+}
+section p {
+  text-align: center;
+  color:red;
+  font-style: italic;
+  font-size:14px;
+  font-weight: bold;
+}
+
+.demo_img {
+  position:relative;
+  margin:10px auto 5px;
+  display: block;
+  border:2px solid black;
+
+  max-width:768px;
+  max-height:512px;
+}
+
+ul {
+  max-width: 768px;
+  margin: 30px auto 70px;
+  width: 49%;
+  display: inline-block;
+}
+
+li {
+  list-style: initial;
+  margin:0 0 5px 20px;
+}
+.demo_img:hover {
+  cursor:col-resize;
+}
+
+.demo_img:before {
+  content:"";
+  padding-top:60%;
+  display:block;
+}
+
+.demo_img > div {
+  position:absolute;
+  left:0;
+  width:100%;
+  top:0;
+  height:100%;
+  background-size:768px auto;
+}
+
+.demo_img > .pic2 {
+  width:50%;
+  border-right: 3px solid white;
+}
+
+#exterior, #interior  {
+  width:100%;
+}
+
+#exterior .pic1 {
+  background-image: url(/images/for_realtors/exterior-house-before.jpg);
+}
+
+#exterior .pic2 {
+  background-image: url(/images/for_realtors/exterior-house-after.jpg);
+}
+
+#interior .pic1 {
+  background-image: url(/images/for_realtors/interior-room-before.jpg);
+}
+
+#interior .pic2 {
+  background-image: url(/images/for_realtors/interior-room-after.jpg);
+}

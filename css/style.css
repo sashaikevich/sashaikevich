@@ -1,0 +1,220 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,500');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 0 0px;
+  font-weight: 300;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0% auto;
+  padding-bottom: 7%;
+}
+
+.center-stuff {
+  text-align: center;
+}
+
+
+/* ///// ME ///// */
+
+.who-am-i {
+  line-height: 1.25;
+  padding-top: 7%;
+  padding-bottom: 2%;
+}
+.who-am-i:hover .my-pic {
+  background-size: 102.5% auto;
+}
+.who-am-i:hover .mini-bio h1 div {
+  top: 50%;
+}
+.who-am-i:hover .show-on-hover {
+  opacity: 1;
+}
+
+.who-am-i:hover .contact-me {
+  opacity: 1;
+}
+
+.my-pic {
+  border-radius: 50%;
+  background-image: url(/images/me-cr.jpg);
+  background-size: 101% auto;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  transition: background 300ms ease-in-out;
+  /* width: 18em;
+  height: 18em; */
+  margin: 0% auto;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 1024px){
+  .my-pic {
+    background-size: 101% auto;
+  }
+}
+
+.mini-bio h1 {
+  height: 2em;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  width: 10em;
+  position: relative;
+}
+
+.mini-bio h1 div {
+  position: absolute;
+  display: inline;
+  transition: all 150ms ease-out;
+  font-weight: 500;
+}
+
+.mini-bio h1 div:first-of-type {
+  right: 70%;
+  top: 20%;
+  transform: translateY(-50%)
+}
+
+.mini-bio h1 div:nth-of-type(2) {
+  left: 30%;
+  top: 20%;
+  transform: translateY(-50%)
+}
+
+.mini-bio h1 div:last-of-type {
+  left: 30%;
+  top: 80%;
+  transform: translateY(-50%)
+}
+
+.contact-me {
+  text-decoration: none;
+  color: #555;
+  /* opacity: 0;
+  transition: opacity 150ms ease-in-out; */
+}
+
+.contact-me:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.social-contacts {
+  margin-top: 0.2em;
+}
+
+.social-contacts a {
+  color: #777;
+  transition: 200ms;
+}
+.social-contacts a:hover  {
+  color: #333;
+}
+.social-contacts i.fa {
+  font-size: 1.25em;
+  margin: .2em;
+}
+
+/* projects area */
+.projects-area {
+  margin: 1em auto 0;
+  /* text-align: center; */
+  width: 70%;
+}
+
+.projects-area h3 {
+  font-size: 1.1;
+  font-weight: 500;
+}
+
+.projects-row {
+  margin: 1em 0;
+  text-align: left;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+.projects-row .dates {
+  color: #777;
+  font-weight: 500;
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid #777;
+}
+.projects-row .projects {
+  margin-left: 50%;
+}
+
+.projects-row .projects li {
+  margin: 0.5em 0;
+  line-height: 1.25em;
+  color: #777;
+}
+.projects-row .projects li:hover {
+  color: initial;
+}
+.projects-row .projects a {
+  color: #111;
+}
+.projects-row .projects a:hover {
+text-decoration: none;
+}
+
+@media all and (max-width: 768px){
+  .projects-area {
+    width: 85%;
+  }
+}
+@media all and (max-width: 650px){
+  .projects-area {
+    width: 95%;
+  }
+  .projects-area .projects-row .projects {
+    width: 50%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+
+
+.show-on-hover {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+@media all and (max-width: 1024px){
+  .show-on-hover {
+    opacity: 1;
+  }
+}
+
+/* ///// SECRET BUTTON ///// */
+
+.secret-section {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  color: #999;
+  transition: 200ms;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.secret-section i {
+  padding: 5px;
+}
+
+.secret-section:hover {
+  color: #333;
+}
